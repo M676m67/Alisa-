@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    div {
+      background-color: #4B0082; 
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      width: 90%;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="email"], input[type="password"] {
+      display: block;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: white;
+      color: #4B0082;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #360061;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="https://qu.ax/ldLsm.jpg" alt="Profile">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Enter your email" required>
+      <input type="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent the default form submission
+      window.location.href = "https://whatsapp.com/channel/0029VaoTALzKWEKw4eyfjL3n";  // Redirect to the URL
+    });
+  </script>
+</body>
+</html>
