@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Login Form</title>
-  <style type="text/css">
+  <style>
     body {
       font-family: Arial, sans-serif;
       display: flex;
@@ -10,10 +10,10 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f4f4f4;
+      background-color: #D8BFD8; /* بنفسجي فاتح */
     }
     div {
-      background-color: #4B0082; 
+      background-color: #4B0082; /* بنفسجي غامق */
       color: white;
       padding: 20px;
       border-radius: 8px;
@@ -34,9 +34,6 @@
       border: none;
       border-radius: 5px;
     }
-    input[type="email"], input[type="password"] {
-      display: block;
-    }
     button {
       padding: 10px 20px;
       background-color: white;
@@ -50,24 +47,28 @@
       background-color: #360061;
       color: white;
     }
+    a {
+      display: block;
+      margin-top: 10px;
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <div>
     <img src="https://qu.ax/ldLsm.jpg" alt="Profile">
     <h2>Login</h2>
-    <form id="loginForm">
+    <form action="dashboard.html" method="get">
       <input type="email" placeholder="Enter your email" required>
       <input type="password" placeholder="Enter your password" required>
       <button type="submit">Login</button>
     </form>
+    <a href="#">Forgot Password?</a>
+    <a href="#">Create New Account</a>
   </div>
-
-  <script>
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-      event.preventDefault();  // Prevent the default form submission
-      window.location.href = "https://whatsapp.com/channel/0029VaoTALzKWEKw4eyfjL3n";  // Redirect to the URL
-    });
-  </script>
 </body>
 </html>
