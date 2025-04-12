@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Cairo', sans-serif; /* التأكد من أن الخط يتم تحميله */
+      font-family: 'Cairo', sans-serif;
       background-image: url('https://qu.ax/LgCWS.jpg'); /* تغيير رابط الصورة في الخلفية */
       background-size: cover;
       background-position: center;
@@ -18,10 +18,22 @@
 
     h1 {
       text-align: center;
-      font-size: 50px;
-      color: #1e90ff; /* تغيير اللون إلى الأزرق */
-      text-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff, 0 0 45px #1e90ff;
+      font-size: 60px;
+      background: linear-gradient(to right, red, yellow, orange, purple, blue); /* تدرج الألوان */
+      -webkit-background-clip: text;
+      color: transparent; /* جعل النص شفاف لإظهار التدرج */
+      text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.8), 0 0 70px rgba(138, 43, 226, 0.8);
+      animation: glow 1.5s ease-in-out infinite alternate; /* تأثير التوهج */
       font-family: 'Cairo', sans-serif;
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.8), 0 0 70px rgba(138, 43, 226, 0.8);
+      }
+      100% {
+        text-shadow: 0 0 60px rgba(255, 0, 0, 1), 0 0 100px rgba(255, 69, 0, 1), 0 0 120px rgba(138, 43, 226, 1);
+      }
     }
 
     .sub-title {
@@ -35,7 +47,7 @@
     .table-container {
       max-width: 800px;
       margin: auto;
-      background-color: rgba(0, 0, 0, 0.6); /* الخلفية شبه شفافة */
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0,0,0,0.8);
@@ -66,7 +78,7 @@
     }
 
     .rank-high {
-      background-color: #000 !important; /* جميع الرتب باللون الأسود */
+      background-color: #000 !important;
     }
 
     .rank-mid {
