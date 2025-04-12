@@ -6,7 +6,7 @@
     body {
       margin: 0;
       height: 100vh;
-      background-image: url('https://qu.ax/CnKBG.jpg');
+      background-image: url('https://qu.ax/CnKBG.jpg'); /* الخلفية الجديدة */
       background-size: cover;
       background-position: center;
       display: flex;
@@ -16,12 +16,11 @@
 
     .arrow {
       font-size: 150px; /* تكبير السهم */
-      color: linear-gradient(to right, red, yellow, green, blue, purple); /* تلوين السهم بتدرج متعدد الألوان */
-      cursor: pointer;
-      animation: bounce 1.5s infinite;
-      background: linear-gradient(to right, red, yellow, green, blue, purple);
+      background: linear-gradient(to right, red, yellow, green, blue, purple); /* تلوين السهم بتدرج متعدد الألوان */
       -webkit-background-clip: text;
       color: transparent; /* جعل النص نفسه شفاف لإظهار التدرج */
+      cursor: pointer;
+      animation: bounce 1.5s infinite;
     }
 
     @keyframes bounce {
