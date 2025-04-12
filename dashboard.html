@@ -1,93 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
+  <meta charset="UTF-8">
   <title>Dashboard</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308');
+      background-size: cover;
+      background-position: center;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      color: #fff;
+      backdrop-filter: blur(5px);
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
 
-    /* إعداد الفيديو في الخلفية */
-    video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+    #animatedText {
+      font-size: 40px;
+      font-weight: bold;
+      color: #00ffff;
+      margin-top: 40px;
+      text-shadow: 2px 2px 4px #000;
     }
 
-    /* المربع الرئيسي */
-    .box {
+    .dashboard {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin-top: 20px;
+      border-radius: 12px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .card {
       background-color: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
       text-align: center;
-      display: inline-block; /* يضبط الحجم بناءً على المحتوى */
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
     }
 
     a {
       text-decoration: none;
     }
-
-    .card {
-      background-color: rgba(30, 30, 30, 0.8); 
-      margin: 10px 0;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-
-    .card:hover {
-      background-color: rgba(50, 50, 50, 0.9);
-      transform: scale(1.05);
-    }
-
-    .card h3 {
-      margin: 0;
-      font-size: 20px;
-      color: white;
-    }
-
-    /* النص المتحرك */
-    #animatedText {
-      font-size: 50px;
-      font-family: 'Courier New', monospace;
-      font-weight: bold;
-      color: #800080; /* البنفسجي */
-      text-align: center;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-      direction: rtl;
-    }
   </style>
 </head>
 <body>
-  <!-- الفيديو الذي يعمل في الخلفية -->
-  <video autoplay muted loop>
-    <source src="https://qu.ax/JHnbp.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
   <!-- النص المتحرك -->
   <div id="animatedText">#@*+&%$</div>
 
-  <!-- المربع الرئيسي -->
-  <div class="box">
+  <!-- المربعات -->
+  <div class="dashboard">
     <a href="https://example.com/servers">
       <div class="card">
         <h3>Servers: 2</h3>
@@ -100,21 +84,20 @@
     </a>
     <a href="https://example.com/usage">
       <div class="card">
-        <h3>SkyCoins Usage: 30.00 per month</h3>
+        <h3>Usage: 30.00 / month</h3>
       </div>
     </a>
     <a href="https://example.com/credits">
       <div class="card">
-        <h3>Out of Credits in: 145 days</h3>
+        <h3>Out of Credits: 145 days</h3>
       </div>
     </a>
   </div>
 
   <script>
-    // النص المتحرك
     const animatedText = document.getElementById("animatedText");
-    const targetText = "𝙺𝙰𝙽𝙰𝙾"; // الكلمة النهائية
-    let currentText = "#@*+&%$";  // النص الأولي
+    const targetText = "𝙺𝙰𝙽𝙰𝙾";
+    let currentText = "#@*+&%$";
     let currentIndex = 0;
     let interval;
 
@@ -124,11 +107,11 @@
         currentIndex++;
         animatedText.textContent = currentText;
       } else {
-        clearInterval(interval); // إيقاف الحركة بعد الانتهاء
+        clearInterval(interval);
       }
     }
 
-    interval = setInterval(updateText, 100); // تحديث النص كل 100 مللي ثانية
+    interval = setInterval(updateText, 100);
   </script>
 </body>
 </html>
