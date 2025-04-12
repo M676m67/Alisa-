@@ -1,138 +1,138 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>بنك نوبالا</title>
-  <!-- تضمين خط Cairo من Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-image: url('https://qu.ax/LgCWS.jpg'); /* تغيير رابط الصورة في الخلفية */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 20px;
-    }
+<!DOCTYPE html>  
+<html lang="ar" dir="rtl">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>بنك نوبالا</title>  
+  <!-- تضمين خط Cairo من Google Fonts -->  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">  
+  <style>  
+    body {  
+      margin: 0;  
+      font-family: 'Cairo', sans-serif;  
+      background-image: url('https://qu.ax/LgCWS.jpg'); /* تغيير رابط الصورة في الخلفية */  
+      background-size: cover;  
+      background-position: center;  
+      color: white;  
+      padding: 20px;  
+    }  
 
-    h1 {
-      text-align: center;
-      font-size: 60px;
-      background: linear-gradient(to right, red, yellow, orange, purple, blue); /* تدرج الألوان */
-      -webkit-background-clip: text;
-      color: transparent; /* جعل النص شفاف لإظهار التدرج */
-      text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.8), 0 0 70px rgba(138, 43, 226, 0.8);
-      animation: glow 1.5s ease-in-out infinite alternate; /* تأثير التوهج */
-      font-family: 'Cairo', sans-serif;
-    }
+    h1 {  
+      text-align: center;  
+      font-size: 60px;  
+      background: linear-gradient(to right, red, yellow, orange, purple, blue); /* تدرج الألوان */  
+      -webkit-background-clip: text;  
+      color: transparent; /* جعل النص شفاف لإظهار التدرج */  
+      text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.8), 0 0 70px rgba(138, 43, 226, 0.8);  
+      animation: glow 1.5s ease-in-out infinite alternate; /* تأثير التوهج */  
+      font-family: 'Cairo', sans-serif;  
+    }  
 
-    @keyframes glow {
-      0% {
-        text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.8), 0 0 70px rgba(138, 43, 226, 0.8);
-      }
-      100% {
-        text-shadow: 0 0 60px rgba(255, 0, 0, 1), 0 0 100px rgba(255, 69, 0, 1), 0 0 120px rgba(138, 43, 226, 1);
-      }
-    }
+    @keyframes glow {  
+      0% {  
+        text-shadow: 0 0 30px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.8), 0 0 70px rgba(138, 43, 226, 0.8);  
+      }  
+      100% {  
+        text-shadow: 0 0 60px rgba(255, 0, 0, 1), 0 0 100px rgba(255, 69, 0, 1), 0 0 120px rgba(138, 43, 226, 1);  
+      }  
+    }  
 
-    .sub-title {
-      text-align: center;
-      font-size: 30px;
-      color: #ffffff;
-      font-family: 'Cairo', sans-serif;
-      text-shadow: 0 0 10px #ff69b4;
-    }
+    .sub-title {  
+      text-align: center;  
+      font-size: 30px;  
+      color: #ffffff;  
+      font-family: 'Cairo', sans-serif;  
+      text-shadow: 0 0 10px #ff69b4;  
+    }  
 
-    .table-container {
-      max-width: 800px;
-      margin: auto;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.8);
-      margin-top: 50px;
-    }
+    .table-container {  
+      max-width: 800px;  
+      margin: auto;  
+      background-color: rgba(0, 0, 0, 0.6);  
+      padding: 20px;  
+      border-radius: 15px;  
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);  
+      margin-top: 50px;  
+    }  
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: center;
-    }
+    table {  
+      width: 100%;  
+      border-collapse: collapse;  
+      text-align: center;  
+    }  
 
-    th, td {
-      padding: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
+    th, td {  
+      padding: 10px;  
+      border: 1px solid rgba(255, 255, 255, 0.2);  
+    }  
 
-    th {
-      background-color: #ff00ff;
-    }
+    th {  
+      background-color: #ff00ff;  
+    }  
 
-    tr:nth-child(even) {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
+    tr:nth-child(even) {  
+      background-color: rgba(255, 255, 255, 0.1);  
+    }  
 
-    tr:nth-child(odd) {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+    tr:nth-child(odd) {  
+      background-color: rgba(0, 0, 0, 0.3);  
+    }  
 
-    .rank-high {
-      background-color: #000 !important;
-    }
+    .rank-high {  
+      background-color: #000 !important;  
+    }  
 
-    .rank-mid {
-      background-color: #000 !important;
-    }
+    .rank-mid {  
+      background-color: #000 !important;  
+    }  
 
-    .rank-low {
-      background-color: #000 !important;
-    }
-  </style>
-</head>
-<body>
+    .rank-low {  
+      background-color: #000 !important;  
+    }  
 
-  <h1>𝑁𝑂𝑃𝐴𝐿𝐴 𝐵𝐴𝑁𝐾</h1> <!-- كلمة بنك نوبالا بشكل خاص -->
-  <div class="sub-title">تامايو عمتك</div> <!-- النص الذي طلبته أسفل العنوان -->
+  </style>  
+</head>  
+<body>  
+  <h1>𝑁𝑂𝑃𝐴𝐿𝐴 𝐵𝐴𝑁𝐾</h1> <!-- كلمة بنك نوبالا بشكل خاص -->  
+  <div class="sub-title">تامايو عمتك</div> <!-- النص الذي طلبته أسفل العنوان -->    
 
-  <!-- الجدول يظهر تحت العنوان -->
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>اللقب</th>
-          <th>العملة</th>
-          <th>الرونز</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="rank-high"><td>الرُتبة العليا</td><td>الأمبراطور</td><td>شادو</td></tr>
-        <tr class="rank-high"><td>نائب الأمبراطور</td><td>شادو</td><td>يامي</td></tr>
-        <tr class="rank-mid"><td>الورد</td><td></td><td></td></tr>
-        <tr class="rank-mid"><td>نائب الورد</td><td></td><td></td></tr>
-        <tr class="rank-mid"><td>الملك</td><td></td><td></td></tr>
-        <tr class="rank-mid"><td>الأمير(ة)</td><td></td><td></td></tr>
-        <tr class="rank-mid"><td>عضو</td><td></td><td></td></tr>
-        <tr class="rank-mid"><td>الفارس</td><td></td><td></td></tr>
-        <tr class="rank-high"><td>الرُتبة العليا</td><td></td><td></td></tr>
-        <tr class="rank-mid"><td>الملكة</td><td>كيكوكي</td><td></td></tr>
-        <tr class="rank-mid"><td>الأميرة</td><td>تامايو</td><td>أنا</td></tr>
-        <tr class="rank-mid"><td>الوزيرة</td><td>كاترين</td><td></td></tr>
-        <tr class="rank-low"><td>رئيسة الفرسان</td><td>يونا</td><td></td></tr>
-        <tr class="rank-low"><td>الفرسان</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>الرُتبة الإدارية</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>القائدة</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>نائب القائدة</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>لواء</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>عقيدة</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>مقدمه</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>رائده</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>عارفة</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>ملازمه</td><td></td><td></td></tr>
-        <tr class="rank-low"><td>الأعضاء</td><td>أ، ب، ت،...الخ</td><td></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-</body>
+  <!-- الجدول يظهر تحت العنوان -->    
+  <div class="table-container">  
+    <table>  
+      <thead>  
+        <tr>  
+          <th>اللقب</th>  
+          <th>الرتبة</th>  <!-- العمود الجديد -->
+          <th>العملة</th>  
+          <th>الرونز</th>  
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr class="rank-high"><td>الرُتبة العليا</td><td></td><td>الأمبراطور</td><td>شادو</td></tr>  
+        <tr class="rank-high"><td>نائب الأمبراطور</td><td></td><td>شادو</td><td>يامي</td></tr>  
+        <tr class="rank-mid"><td>الورد</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-mid"><td>نائب الورد</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-mid"><td>الملك</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-mid"><td>الأمير(ة)</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-mid"><td>عضو</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-mid"><td>الفارس</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-high"><td>الرُتبة العليا</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-mid"><td>الملكة</td><td></td><td>كيكوكي</td><td></td></tr>  
+        <tr class="rank-mid"><td>الأميرة</td><td></td><td>تامايو</td><td>أنا</td></tr>  
+        <tr class="rank-mid"><td>الوزيرة</td><td></td><td>كاترين</td><td></td></tr>  
+        <tr class="rank-low"><td>رئيسة الفرسان</td><td></td><td>يونا</td><td></td></tr>  
+        <tr class="rank-low"><td>الفرسان</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>الرُتبة الإدارية</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>القائدة</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>نائب القائدة</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>لواء</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>عقيدة</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>مقدمه</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>رائده</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>عارفة</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>ملازمه</td><td></td><td></td><td></td></tr>  
+        <tr class="rank-low"><td>الأعضاء</td><td></td><td>أ، ب، ت،...الخ</td><td></td></tr>  
+      </tbody>  
+    </table>  
+  </div>  
+</body>  
 </html>
