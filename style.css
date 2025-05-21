@@ -77,7 +77,8 @@ h2 {
 
 #searchInput {
   padding: 12px 20px;
-  width: 320px;
+  width: 90%;
+  max-width: 400px;
   font-size: 16px;
   border-radius: 25px;
   border: 1px solid #ccc;
@@ -87,15 +88,16 @@ h2 {
   transition: all 0.4s ease;
   cursor: text;
 }
-
 #searchInput:focus {
   box-shadow: 0 0 20px rgba(128, 0, 128, 0.7);
   border-color: purple;
 }
 
 .table-container {
+  width: 95%;
   max-width: 800px;
   margin: 30px auto 0;
+  overflow-x: auto; /* عشان لو الجدول كبير */
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 15px;
@@ -156,4 +158,18 @@ td[title]:hover::after {
   opacity: 1;
   transition: opacity 0.3s ease;
   z-index: 10;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
 }
