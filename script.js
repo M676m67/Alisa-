@@ -3,11 +3,19 @@ const container = document.getElementById('searchContainer');
 const tableBody = document.querySelector('table tbody');
 
 const ranksData = [
-  { title: "", rank: "", currency: "" },
-  { title: "", rank: "", currency: "" },
-  { title: "", rank: "", currency: "" },
-  { title: "", rank: "", currency: "" },
-  { title: "", rank: "", currency: "" }
+  { title: "نوسا", rank: "مرسسه", currency: "100k" },
+  { title: "كاناو", rank: "مؤسسه", currency: "100k" },
+  { title: "ايرين", rank: "ورده عملاقه", currency: "40k" },
+  { title: "غوجو", rank: "وردة حراسه", currency: "30k" },
+  { title: "كوتوها", rank: "قائدة", currency: "30k" },
+  { title: "لاماكس", rank: "عضوه", currency: "10k" }, 
+  { title: "ياشيرو", rank: "عضوه", currency: "10k" },
+  { title: "شيرايوكي", rank: "عضوه", currency: "10k" },
+  { title: "كيكه", rank: "عضوه", currency: "10k" },
+  { title: "ريكو", rank: "عضوه", currency: "10k" },
+  { title: "شونا", rank: "عضوه", currency: "10k" },
+  { title: "شروق", rank: "عضوه", currency: "10k" }
+  
 ];
 
 function populateTable(data) {
