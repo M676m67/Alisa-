@@ -79,16 +79,28 @@ h2 {
   padding: 12px 20px;
   width: 320px;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 20px;
   border: 1px solid #ccc;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   outline: none;
-  transition: all 0.4s ease;
+  transition: 0.5s ease;
   cursor: text;
+  background-color: #fff;
+  color: #000;
+}
+
+#searchInput:hover {
+  background: #51025f;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #51025f;
 }
 
 #searchInput:focus {
+  background: #51025f;
+  color: #fff;
+  letter-spacing: 1px;
   box-shadow: 0 0 20px rgba(128, 0, 128, 0.7);
   border-color: purple;
 }
