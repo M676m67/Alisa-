@@ -4,20 +4,6 @@ html, body {
   padding: 0;
   overflow-x: hidden;
 }
-#topBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #51025f;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-  transition: 0.3s;
-}
 #backgroundCanvas {
   position: fixed;
   top: 0;
@@ -181,4 +167,18 @@ td[title]:hover::after {
   opacity: 1;
   transition: opacity 0.3s ease;
   z-index: 10;
+}
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #51025f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
 }
