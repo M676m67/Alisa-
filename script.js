@@ -12,13 +12,19 @@ const ranksData = [
   { title: "شينوبو", rank: "تدريبي", currency: "30k" },
   { title: "لاماكس", rank: "عضوه", currency: "10k" }, 
   { title: "آي", rank: "عضوه", currency: "10k" },
+  { title: "توغا", rank: "عضوه", currency: "10k" },
+  { title: "سوما", rank: "عضوه", currency: "10k" },
   { title: "يوسانو", rank: "عضوه", currency:"10k" },
   { title: "ياشيرو", rank: "عضوه", currency: "10k" },
   { title: "كيكه", rank: "عضوه", currency: "10k" },
+  { title: "كازوها", rank: "عضوه", currency: "10k" },
+  { title: "كانا", rank: "عضوه", currency: "10k" },
   { title: "ريكو", rank: "عضوه", currency: "10k" },
+  { title: "ميتسوري", rank: "عضوه", currency: "10k" },
   { title: "شونا", rank: "عضوه", currency: "10k" },
   { title: "شيرايوكي", rank: "عضوه", currency: "10k" },
   { title: "شروق", rank: "عضوه", currency: "10k" },
+  { title: "هيستوريا", rank: "عضوه", currency: "10k" },
   { title: "فورينا", rank: "عضوه", currency: "10k" }
 ];
 
