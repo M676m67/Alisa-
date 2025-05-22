@@ -15,7 +15,8 @@ const ranksData = [
   { title: "ريكو", rank: "عضوه", currency: "10k" },
   { title: "شونا", rank: "عضوه", currency: "10k" },
   { title: "شروق", rank: "عضوه", currency: "10k" },
-  { title: "فورينا", rank: "عضوه", currency: "10k" }
+  { title: "فورينا", rank: "عضوه", currency: "10k" },
+  { title: "ليوسانو", rank: "عضوه", currency:"10k" }
 ];
 
 function populateTable(data) {
