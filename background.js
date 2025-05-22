@@ -32,7 +32,7 @@ function animate() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+    ctx.fillStyle = 'rgba(0, 255, 200, 0.5)'; 
     ctx.fill();
   }
   requestAnimationFrame(animate);
