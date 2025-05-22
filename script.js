@@ -3,7 +3,7 @@ const container = document.getElementById('searchContainer');
 const tableBody = document.querySelector('table tbody');
 
 const ranksData = [
-  { title: "نوسا", rank: "مرسسه", currency: "100k" },
+  { title: "نوسا", rank: "مؤسسه", currency: "100k" },
   { title: "كاناو", rank: "مؤسسه", currency: "100k" },
   { title: "كوتوها", rank: "قائده", currency: "40k" },
   { title: "نيوفي", rank: "مساعدة", currency: "30k" },
