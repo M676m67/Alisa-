@@ -6,7 +6,7 @@ const ranksData = [
   { title: "نوسا", rank: "مرسسه", currency: "100k" },
   { title: "كاناو", rank: "مؤسسه", currency: "100k" },
   { title: "ايرين", rank: "ورده عملاقه", currency: "40k" },
-  { title: "غوجو", rank: "وردة حراسه", currency: "30k" },
+  { title: "غوجو", rank: "وردة لامعه", currency: "30k" },
   { title: "كوتوها", rank: "قائدة", currency: "30k" },
   { title: "لاماكس", rank: "عضوه", currency: "10k" }, 
   { title: "ياشيرو", rank: "عضوه", currency: "10k" },
