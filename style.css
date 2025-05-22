@@ -169,16 +169,21 @@ td[title]:hover::after {
   z-index: 10;
 }
 #topBtn {
+  display: none;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #51025f;
+  bottom: 20px;
+  right: 20px;
+  background-color: #a000a0;
   color: white;
   border: none;
+  padding: 12px 15px;
   border-radius: 50%;
-  padding: 15px;
   font-size: 20px;
   cursor: pointer;
-  display: none;
-  transition: 0.3s;
+  transition: background 0.3s, transform 0.3s;
+  z-index: 999;
+}
+#topBtn:hover {
+  background: #51025f;
+  transform: scale(1.1);
 }
