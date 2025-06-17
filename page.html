@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>𝗤𝗨𝗥𝗔𝗡 𝗦𝗜𝗧𝗘</title>
+  <link rel="icon" href="https://k.top4top.io/p_3453q41550.jpg" type="image/png">
+  <link rel="apple-touch-icon" href="https://k.top4top.io/p_3453q41550.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header-container">
+  <div class="quran-logo">
+    <div class="quran-icon">
+      <i class="fas fa-book-open-reader"></i>
+      <div class="book-stand"></div>
+    </div>
+    <div class="quran-logo-text">
+      <span>M</span>
+      <span>A</span>
+      <span>R</span>
+      <span>I</span>
+      <span>A</span>
+      <span>m</span>
+    </div>
+  </div>
+  
+  <div class="right-buttons">
+    <div class="like-container">
+      <span class="like-count">0</span>
+      <button id="likeBtn" class="btn" title="Like">
+        <i class="far fa-heart"></i>
+      </button>
+    </div>
+    <button id="langBtn" class="btn"><i class="fas fa-globe"></i></button>
+    <div id="langMenu" class="lang-menu">
+      <button data-lang="ar"><i class="fas fa-flag"></i> العربية</button>
+      <button data-lang="en"><i class="fas fa-flag-usa"></i> English</button>
+      <button data-lang="fa"><i class="fas fa-flag"></i> فارسی</button>
+    </div>
+    <audio id="clickSound1" src="https://i.top4top.io/m_3417z8hpu1.mp3" preload="auto"></audio>
+    <audio id="clickSound2" src="https://h.top4top.io/m_3417evjtr0.mp3" preload="auto"></audio>
+  </div>
+</div>
+
+<div class="alert-box" id="alertBox"></div>
+
+<div class="quran-container">
+  <div class="selection-box fade-in">
+    <div class="selection-row">
+      <div class="selection-group">
+        <label id="surah-label">اختر السورة</label>
+        <select id="surah-select"></select>
+      </div>
+      <div class="selection-group">
+        <label id="ayah-label">رقم الآية</label>
+        <input type="number" id="ayah-input" min="1" value="1">
+      </div>
+    </div>
+    <button id="get-ayah" class="btn-get">
+      <span id="get-ayah-text">احصل على الآية</span>
+      <div class="loading-spinner" id="loading-spinner"></div>
+    </button>
+  </div>
+
+  <div class="ayah-container fade-in" id="ayah-container" style="display: none;">
+    <div class="ayah-arabic" id="ayah-arabic"></div>
+    <div class="ayah-translation" id="ayah-translation"></div>
+    <div class="ayah-info" id="ayah-info"></div>
+    
+    <div class="custom-audio-player">
+      <div class="audio-controls">
+        <button id="playBtn"><i class="fas fa-play"></i></button>
+        <button id="pauseBtn" style="display: none;"><i class="fas fa-pause"></i></button>
+      </div>
+      <div class="audio-progress" id="audioProgress">
+        <div class="audio-progress-bar" id="audioProgressBar"></div>
+      </div>
+      <div class="audio-time">
+        <span id="currentTime">00:00</span>
+        <span>/</span>
+        <span id="duration">00:00</span>
+      </div>
+      <div class="download-btn">
+        <a href="#" id="downloadLink"><i class="fas fa-download"></i></a>
+      </div>
+    </div>
+    
+    <div class="surah-info">
+      <div class="surah-name" id="surah-name"></div>
+      <div class="surah-details">
+        <div class="surah-detail">
+          <span id="surah-type-label">نوع السورة</span>
+          <strong id="surah-type"></strong>
+        </div>
+        <div class="surah-detail">
+          <span id="surah-ayahs-label">عدد الآيات</span>
+          <strong id="surah-ayahs"></strong>
+        </div>
+        <div class="surah-detail">
+          <span id="surah-revelation-label">مكان النزول</span>
+          <strong id="surah-revelation"></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="https://www.instagram.com/adiryx" target="_blank" oncontextmenu="return false;"><i class="fab fa-instagram"></i></a>
+  <span class="footer-text">BY kanao</span>
+</div>
+
+<audio id="audioElement" controls style="display: none;"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
