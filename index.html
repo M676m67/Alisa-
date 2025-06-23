@@ -3,31 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Login</title>
+  <title>Fancy Login</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('https://files.catbox.moe/87wxw3.jpg') no-repeat center center/cover;
+      backdrop-filter: blur(5px);
+    }
+
+    .wrapper {
+      width: 400px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      color: #fff;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .input-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 15px 45px 15px 15px;
+      border: none;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      backdrop-filter: blur(5px);
+    }
+
+    .input-box input::placeholder {
+      color: #eee;
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .focus-icon {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%) scale(0);
+      font-size: 22px;
+      color: #ffd700;
+      transition: transform 0.3s ease;
+    }
+
+    .focus-icon.active {
+      transform: translateY(-50%) scale(1.2);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #ff0080, #7928ca);
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .register-link {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .register-link a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
   <div class="wrapper">
-    <form action="">
+    <form id="loginForm">
       <h1>Login</h1>
+
       <div class="input-box">
-        <input type="text" placeholder="Username" required>
+        <input type="text" id="username" placeholder="Username" required>
         <i class='bx bxs-user'></i>
+        <span class="focus-icon" id="user-focus">⭐</span>
       </div>
+
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" required>
         <i class='bx bxs-lock-alt'></i>
+        <span class="focus-icon" id="pass-focus">⭐</span>
       </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox"> Remember me</label>
-        <a href="#">Forgot Password?</a>
-      </div>
+
       <button type="submit" class="btn">Login</button>
+
       <div class="register-link">
         <p>Don't have an account? <a href="#">Register</a></p>
       </div>
+
     </form>
   </div>
+
+  <script>
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+    const userFocus = document.getElementById('user-focus');
+    const passFocus = document.getElementById('pass-focus');
+
+    username.addEventListener('focus', () => {
+      userFocus.classList.add('active');
+    });
+
+    username.addEventListener('blur', () => {
+      userFocus.classList.remove('active');
+    });
+
+    password.addEventListener('focus', () => {
+      passFocus.classList.add('active');
+    });
+
+    password.addEventListener('blur', () => {
+      passFocus.classList.remove('active');
+    });
+  </script>
 </body>
 </html>
