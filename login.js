@@ -8,9 +8,10 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
   const storedPassword = localStorage.getItem("userPassword");
 
   if (email === storedEmail && password === storedPassword) {
-    alert("تم تسجيل الدخول بنجاح!");
+    // تسجيل دخول ناجح بدون أي رسالة
     window.location.href = "home.html"; // الصفحة الرئيسية
   } else {
-    alert("بيانات الدخول غير صحيحة");
+    // في حالة الخطأ فقط نظهر رسالة
+    alert("Invalid login credentials.");
   }
 });
