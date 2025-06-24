@@ -10,72 +10,50 @@
 }
 
 body {
-  min-height: 100vh;
   background: var(--clr);
   scroll-behavior: smooth;
 }
 
-/* الشرح في أول الصفحة */
-
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px 40px 20px;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.intro-text {
-  max-width: 500px;
-  text-align: center;
-  color: #252423;
-}
-
-.intro-text h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.intro-text p {
-  font-size: 1.2rem;
-}
-
-.intro-image img {
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-
-.intro-image img:hover {
-  transform: translateY(-10px) scale(1.05);
-}
-
-/* سكاشن الصفحة */
 section {
   height: 100vh;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
-  color: #252423;
 }
 
-/* ألوان السكاشن */
-#home { background-color: #ffca07; }
-#profile { background-color: #f7f7f7; }
-#messages { background-color: #eeeeee; }
-#photos { background-color: #dddddd; }
-#settings { background-color: #cccccc; }
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-/* ال navigation القديمة بشكلها الأصلي */
+.home-text {
+  max-width: 400px;
+  font-size: 1.5rem;
+  color: #252423;
+  text-align: center;
+}
 
+.home-image img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Navigation */
 .navigation {
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 400px;
