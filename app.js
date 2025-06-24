@@ -1,8 +1,19 @@
-const list = document.querySelectorAll('.list');
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".navigation ul li");
 
-list.forEach(item => {
-    item.addEventListener('click', function() {
-        list.forEach(li => li.classList.remove('active'));
-        this.classList.add('active');
-    });
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((li) => {
+    li.classList.remove("active");
+    if (li.querySelector("a").getAttribute("href") === `#${current}`) {
+      li.classList.add("active");
+    }
+  });
 });
