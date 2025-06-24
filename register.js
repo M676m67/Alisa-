@@ -11,7 +11,8 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
   form.innerHTML = `
     <div class="success-message">
       <h1>Registration Successful</h1>
-      <p>Welcome, ${email}! You can now log into your account.</p>
+      <p>Welcome, <strong>${email}</strong>!</p>
+      <p>You can now log into your account.</p>
       <button onclick="window.location.href='index.html'" class="btn">Log In Now</button>
     </div>
   `;
