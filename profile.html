@@ -6,31 +6,34 @@
   <link rel="stylesheet" href="home.css">
   <style>
     body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
       background: linear-gradient(to bottom, #ffca07, #000);
       color: #fff;
-      font-family: "Poppins", sans-serif;
-      padding-bottom: 100px; /* عشان نخلي مساحة للأزرار تحت */
+      padding-bottom: 100px; /* مساحة للأزرار تحت */
     }
     .cover {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 200px;
+      height: 250px;
       background: url('https://files.catbox.moe/1u78o6.jpg') no-repeat center center;
       background-size: cover;
+      z-index: -1;
     }
     .profile-box {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0, 0, 0, 0.6);
       max-width: 400px;
-      margin: -70px auto 20px;
+      margin: 180px auto 20px;
       border-radius: 15px;
-      padding: 40px 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      text-align: center;
       backdrop-filter: blur(8px);
     }
     .profile-pic-container {
       position: relative;
-      display: flex;
-      justify-content: center;
-      margin-top: -90px;
       margin-bottom: 20px;
     }
     .profile-pic {
@@ -39,12 +42,12 @@
       border-radius: 50%;
       border: 5px solid #ffca07;
       object-fit: cover;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     }
     .camera-icon {
       position: absolute;
       bottom: 10px;
-      right: 110px;
+      right: 35%;
       background: #ffca07;
       border-radius: 50%;
       padding: 8px;
@@ -55,7 +58,7 @@
     }
     h1 {
       color: #ffca07;
-      text-align: center;
+      margin-bottom: 10px;
     }
     p {
       font-size: 16px;
@@ -103,16 +106,16 @@
   </div>
 </div>
 
-<!-- نسخنا الأزرار نفس اللي في home.html -->
+<!-- أزرار التنقل مثل home.html -->
 <div class="navigation">
-<ul>
-<li class="list"><a href="home.html"><span class="icon"><ion-icon name="home-outline"></ion-icon></span><span class="text">Home</span></a></li>
-<li class="list active"><a href="profile.html"><span class="icon"><ion-icon name="person-outline"></ion-icon></span><span class="text">Profile</span></a></li>
-<li class="list"><a href="#"><span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span><span class="text">Messages</span></a></li>
-<li class="list"><a href="#"><span class="icon"><ion-icon name="image-outline"></ion-icon></span><span class="text">Photos</span></a></li>
-<li class="list"><a href="#"><span class="icon"><ion-icon name="settings-outline"></ion-icon></span><span class="text">Settings</span></a></li>
-<div class="indicator"></div>
-</ul>
+  <ul>
+    <li class="list"><a href="home.html"><span class="icon"><ion-icon name="home-outline"></ion-icon></span><span class="text">Home</span></a></li>
+    <li class="list active"><a href="profile.html"><span class="icon"><ion-icon name="person-outline"></ion-icon></span><span class="text">Profile</span></a></li>
+    <li class="list"><a href="#"><span class="icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span><span class="text">Messages</span></a></li>
+    <li class="list"><a href="#"><span class="icon"><ion-icon name="image-outline"></ion-icon></span><span class="text">Photos</span></a></li>
+    <li class="list"><a href="#"><span class="icon"><ion-icon name="settings-outline"></ion-icon></span><span class="text">Settings</span></a></li>
+    <div class="indicator"></div>
+  </ul>
 </div>
 
 <script>
